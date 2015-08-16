@@ -11,9 +11,14 @@
 		55BBD6E01B8030BA0022CFC6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 55BBD6DF1B8030BA0022CFC6 /* AppDelegate.m */; };
 		55BBD6E31B8030BA0022CFC6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 55BBD6E21B8030BA0022CFC6 /* ViewController.m */; };
 		55BBD6E61B8030BA0022CFC6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55BBD6E41B8030BA0022CFC6 /* Main.storyboard */; };
-		55BBD6E91B8030BA0022CFC6 /* CoreDataDemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 55BBD6E71B8030BA0022CFC6 /* CoreDataDemo.xcdatamodeld */; };
 		55BBD6EB1B8030BA0022CFC6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55BBD6EA1B8030BA0022CFC6 /* Assets.xcassets */; };
 		55BBD6EE1B8030BA0022CFC6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55BBD6EC1B8030BA0022CFC6 /* LaunchScreen.storyboard */; };
+		55BBD6FC1B8037AC0022CFC6 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55BBD6FB1B8037AC0022CFC6 /* CoreData.framework */; };
+		55BBD6FF1B8057FB0022CFC6 /* CoreDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 55BBD6FE1B8057FB0022CFC6 /* CoreDataManager.m */; };
+		55BBD7031B8058830022CFC6 /* CoreDataDemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 55BBD7011B8058830022CFC6 /* CoreDataDemo.xcdatamodeld */; };
+		55BBD7131B805A5A0022CFC6 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 55BBD7121B805A5A0022CFC6 /* Person.m */; };
+		55BBD71E1B8078CF0022CFC6 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 55BBD71B1B8078CF0022CFC6 /* DetailViewController.m */; };
+		55BBD71F1B8078CF0022CFC6 /* DirectAccessViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 55BBD71D1B8078CF0022CFC6 /* DirectAccessViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,10 +29,19 @@
 		55BBD6E11B8030BA0022CFC6 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		55BBD6E21B8030BA0022CFC6 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		55BBD6E51B8030BA0022CFC6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		55BBD6E81B8030BA0022CFC6 /* CoreDataDemo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreDataDemo.xcdatamodel; sourceTree = "<group>"; };
 		55BBD6EA1B8030BA0022CFC6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		55BBD6ED1B8030BA0022CFC6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		55BBD6EF1B8030BA0022CFC6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		55BBD6FB1B8037AC0022CFC6 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		55BBD6FD1B8057FB0022CFC6 /* CoreDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CoreDataManager.h; path = CoreDataManager/CoreDataManager.h; sourceTree = "<group>"; };
+		55BBD6FE1B8057FB0022CFC6 /* CoreDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CoreDataManager.m; path = CoreDataManager/CoreDataManager.m; sourceTree = "<group>"; };
+		55BBD7021B8058830022CFC6 /* CoreDataDemo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreDataDemo.xcdatamodel; sourceTree = "<group>"; };
+		55BBD7111B805A5A0022CFC6 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Person.h; path = CoreDataManager/Person.h; sourceTree = "<group>"; };
+		55BBD7121B805A5A0022CFC6 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Person.m; path = CoreDataManager/Person.m; sourceTree = "<group>"; };
+		55BBD71A1B8078CF0022CFC6 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DetailViewController.h; path = DirectAccess/DetailViewController.h; sourceTree = "<group>"; };
+		55BBD71B1B8078CF0022CFC6 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DetailViewController.m; path = DirectAccess/DetailViewController.m; sourceTree = "<group>"; };
+		55BBD71C1B8078CF0022CFC6 /* DirectAccessViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DirectAccessViewController.h; path = DirectAccess/DirectAccessViewController.h; sourceTree = "<group>"; };
+		55BBD71D1B8078CF0022CFC6 /* DirectAccessViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DirectAccessViewController.m; path = DirectAccess/DirectAccessViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55BBD6FC1B8037AC0022CFC6 /* CoreData.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +59,7 @@
 		55BBD6CF1B8030BA0022CFC6 = {
 			isa = PBXGroup;
 			children = (
+				55BBD6FB1B8037AC0022CFC6 /* CoreData.framework */,
 				55BBD6DA1B8030BA0022CFC6 /* CoreDataDemo */,
 				55BBD6D91B8030BA0022CFC6 /* Products */,
 			);
@@ -60,6 +76,8 @@
 		55BBD6DA1B8030BA0022CFC6 /* CoreDataDemo */ = {
 			isa = PBXGroup;
 			children = (
+				55BBD7001B8058030022CFC6 /* CoreDataManager */,
+				55BBD7201B8078D50022CFC6 /* DirectAccess */,
 				55BBD6DE1B8030BA0022CFC6 /* AppDelegate.h */,
 				55BBD6DF1B8030BA0022CFC6 /* AppDelegate.m */,
 				55BBD6E11B8030BA0022CFC6 /* ViewController.h */,
@@ -68,7 +86,6 @@
 				55BBD6EA1B8030BA0022CFC6 /* Assets.xcassets */,
 				55BBD6EC1B8030BA0022CFC6 /* LaunchScreen.storyboard */,
 				55BBD6EF1B8030BA0022CFC6 /* Info.plist */,
-				55BBD6E71B8030BA0022CFC6 /* CoreDataDemo.xcdatamodeld */,
 				55BBD6DB1B8030BA0022CFC6 /* Supporting Files */,
 			);
 			path = CoreDataDemo;
@@ -80,6 +97,29 @@
 				55BBD6DC1B8030BA0022CFC6 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		55BBD7001B8058030022CFC6 /* CoreDataManager */ = {
+			isa = PBXGroup;
+			children = (
+				55BBD7011B8058830022CFC6 /* CoreDataDemo.xcdatamodeld */,
+				55BBD6FD1B8057FB0022CFC6 /* CoreDataManager.h */,
+				55BBD6FE1B8057FB0022CFC6 /* CoreDataManager.m */,
+				55BBD7111B805A5A0022CFC6 /* Person.h */,
+				55BBD7121B805A5A0022CFC6 /* Person.m */,
+			);
+			name = CoreDataManager;
+			sourceTree = "<group>";
+		};
+		55BBD7201B8078D50022CFC6 /* DirectAccess */ = {
+			isa = PBXGroup;
+			children = (
+				55BBD71A1B8078CF0022CFC6 /* DetailViewController.h */,
+				55BBD71B1B8078CF0022CFC6 /* DetailViewController.m */,
+				55BBD71C1B8078CF0022CFC6 /* DirectAccessViewController.h */,
+				55BBD71D1B8078CF0022CFC6 /* DirectAccessViewController.m */,
+			);
+			name = DirectAccess;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -152,10 +192,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55BBD7131B805A5A0022CFC6 /* Person.m in Sources */,
 				55BBD6E31B8030BA0022CFC6 /* ViewController.m in Sources */,
-				55BBD6E91B8030BA0022CFC6 /* CoreDataDemo.xcdatamodeld in Sources */,
+				55BBD6FF1B8057FB0022CFC6 /* CoreDataManager.m in Sources */,
+				55BBD71F1B8078CF0022CFC6 /* DirectAccessViewController.m in Sources */,
+				55BBD7031B8058830022CFC6 /* CoreDataDemo.xcdatamodeld in Sources */,
 				55BBD6E01B8030BA0022CFC6 /* AppDelegate.m in Sources */,
 				55BBD6DD1B8030BA0022CFC6 /* main.m in Sources */,
+				55BBD71E1B8078CF0022CFC6 /* DetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -306,13 +350,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		55BBD6E71B8030BA0022CFC6 /* CoreDataDemo.xcdatamodeld */ = {
+		55BBD7011B8058830022CFC6 /* CoreDataDemo.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				55BBD6E81B8030BA0022CFC6 /* CoreDataDemo.xcdatamodel */,
+				55BBD7021B8058830022CFC6 /* CoreDataDemo.xcdatamodel */,
 			);
-			currentVersion = 55BBD6E81B8030BA0022CFC6 /* CoreDataDemo.xcdatamodel */;
-			path = CoreDataDemo.xcdatamodeld;
+			currentVersion = 55BBD7021B8058830022CFC6 /* CoreDataDemo.xcdatamodel */;
+			name = CoreDataDemo.xcdatamodeld;
+			path = CoreDataManager/CoreDataDemo.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};

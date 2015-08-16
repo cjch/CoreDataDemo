@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  DirectAccessViewController.h
 //  CoreDataDemo
 //
 //  Created by jiechen on 15/8/16.
@@ -8,7 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface DirectAccessViewController : UIViewController
+
++ (instancetype)instance;
 
 @end
-
