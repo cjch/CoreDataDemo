@@ -9,10 +9,12 @@
 #import <UIKit/UIKit.h>
 
 @class Person;
+@class Card;
 
 @interface DetailViewController : UIViewController
 
 @property (nonatomic, strong) Person *person;
+@property (nonatomic, strong) Card *card;
 
 + (instancetype)instance;
 

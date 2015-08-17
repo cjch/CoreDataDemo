@@ -8,10 +8,12 @@
 
 #import "ViewController.h"
 #import "DirectAccessViewController.h"
+#import "IndirectAccessTableViewController.h"
 
 @interface ViewController ()
 
 - (IBAction)onDirectAccessButtonPressed:(UIButton *)sender;
+- (IBAction)onIndirectAccessButtonPressed:(UIButton *)sender;
 
 @end
 
@@ -30,6 +32,11 @@
 
 - (IBAction)onDirectAccessButtonPressed:(UIButton *)sender {
     DirectAccessViewController *vc = [DirectAccessViewController instance];
+    [self.navigationController pushViewController:vc animated:YES];
+}
+
+- (IBAction)onIndirectAccessButtonPressed:(UIButton *)sender {
+    IndirectAccessTableViewController *vc = [IndirectAccessTableViewController new];
     [self.navigationController pushViewController:vc animated:YES];
 }
 

@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5552FC771B8206DD00CAE085 /* PersonDetail.m in Sources */ = {isa = PBXBuildFile; fileRef = 5552FC731B8206DD00CAE085 /* PersonDetail.m */; };
+		5552FC781B8206DD00CAE085 /* Card.m in Sources */ = {isa = PBXBuildFile; fileRef = 5552FC761B8206DD00CAE085 /* Card.m */; };
+		5578FEA81B820F3400E7BCD4 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5578FEA51B820F3400E7BCD4 /* DetailViewController.m */; };
+		5578FEA91B820F3400E7BCD4 /* DirectAccessViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5578FEA71B820F3400E7BCD4 /* DirectAccessViewController.m */; };
+		5578FEAC1B820F5C00E7BCD4 /* IndirectAccessTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5578FEAB1B820F5C00E7BCD4 /* IndirectAccessTableViewController.m */; };
 		55BBD6DD1B8030BA0022CFC6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 55BBD6DC1B8030BA0022CFC6 /* main.m */; };
 		55BBD6E01B8030BA0022CFC6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 55BBD6DF1B8030BA0022CFC6 /* AppDelegate.m */; };
 		55BBD6E31B8030BA0022CFC6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 55BBD6E21B8030BA0022CFC6 /* ViewController.m */; };
@@ -17,11 +22,19 @@
 		55BBD6FF1B8057FB0022CFC6 /* CoreDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 55BBD6FE1B8057FB0022CFC6 /* CoreDataManager.m */; };
 		55BBD7031B8058830022CFC6 /* CoreDataDemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 55BBD7011B8058830022CFC6 /* CoreDataDemo.xcdatamodeld */; };
 		55BBD7131B805A5A0022CFC6 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 55BBD7121B805A5A0022CFC6 /* Person.m */; };
-		55BBD71E1B8078CF0022CFC6 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 55BBD71B1B8078CF0022CFC6 /* DetailViewController.m */; };
-		55BBD71F1B8078CF0022CFC6 /* DirectAccessViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 55BBD71D1B8078CF0022CFC6 /* DirectAccessViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5552FC721B8206DD00CAE085 /* PersonDetail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PersonDetail.h; path = CoreDataManager/PersonDetail.h; sourceTree = "<group>"; };
+		5552FC731B8206DD00CAE085 /* PersonDetail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PersonDetail.m; path = CoreDataManager/PersonDetail.m; sourceTree = "<group>"; };
+		5552FC751B8206DD00CAE085 /* Card.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Card.h; path = CoreDataManager/Card.h; sourceTree = "<group>"; };
+		5552FC761B8206DD00CAE085 /* Card.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Card.m; path = CoreDataManager/Card.m; sourceTree = "<group>"; };
+		5578FEA41B820F3400E7BCD4 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DetailViewController.h; path = ShowData/DetailViewController.h; sourceTree = "<group>"; };
+		5578FEA51B820F3400E7BCD4 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DetailViewController.m; path = ShowData/DetailViewController.m; sourceTree = "<group>"; };
+		5578FEA61B820F3400E7BCD4 /* DirectAccessViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DirectAccessViewController.h; path = ShowData/DirectAccessViewController.h; sourceTree = "<group>"; };
+		5578FEA71B820F3400E7BCD4 /* DirectAccessViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DirectAccessViewController.m; path = ShowData/DirectAccessViewController.m; sourceTree = "<group>"; };
+		5578FEAA1B820F5C00E7BCD4 /* IndirectAccessTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IndirectAccessTableViewController.h; path = ShowData/IndirectAccessTableViewController.h; sourceTree = "<group>"; };
+		5578FEAB1B820F5C00E7BCD4 /* IndirectAccessTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IndirectAccessTableViewController.m; path = ShowData/IndirectAccessTableViewController.m; sourceTree = "<group>"; };
 		55BBD6D81B8030BA0022CFC6 /* CoreDataDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreDataDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		55BBD6DC1B8030BA0022CFC6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		55BBD6DE1B8030BA0022CFC6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -38,10 +51,6 @@
 		55BBD7021B8058830022CFC6 /* CoreDataDemo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreDataDemo.xcdatamodel; sourceTree = "<group>"; };
 		55BBD7111B805A5A0022CFC6 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Person.h; path = CoreDataManager/Person.h; sourceTree = "<group>"; };
 		55BBD7121B805A5A0022CFC6 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Person.m; path = CoreDataManager/Person.m; sourceTree = "<group>"; };
-		55BBD71A1B8078CF0022CFC6 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DetailViewController.h; path = DirectAccess/DetailViewController.h; sourceTree = "<group>"; };
-		55BBD71B1B8078CF0022CFC6 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DetailViewController.m; path = DirectAccess/DetailViewController.m; sourceTree = "<group>"; };
-		55BBD71C1B8078CF0022CFC6 /* DirectAccessViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DirectAccessViewController.h; path = DirectAccess/DirectAccessViewController.h; sourceTree = "<group>"; };
-		55BBD71D1B8078CF0022CFC6 /* DirectAccessViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DirectAccessViewController.m; path = DirectAccess/DirectAccessViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,7 +86,7 @@
 			isa = PBXGroup;
 			children = (
 				55BBD7001B8058030022CFC6 /* CoreDataManager */,
-				55BBD7201B8078D50022CFC6 /* DirectAccess */,
+				55BBD7201B8078D50022CFC6 /* ShowData */,
 				55BBD6DE1B8030BA0022CFC6 /* AppDelegate.h */,
 				55BBD6DF1B8030BA0022CFC6 /* AppDelegate.m */,
 				55BBD6E11B8030BA0022CFC6 /* ViewController.h */,
@@ -103,6 +112,10 @@
 			isa = PBXGroup;
 			children = (
 				55BBD7011B8058830022CFC6 /* CoreDataDemo.xcdatamodeld */,
+				5552FC721B8206DD00CAE085 /* PersonDetail.h */,
+				5552FC731B8206DD00CAE085 /* PersonDetail.m */,
+				5552FC751B8206DD00CAE085 /* Card.h */,
+				5552FC761B8206DD00CAE085 /* Card.m */,
 				55BBD6FD1B8057FB0022CFC6 /* CoreDataManager.h */,
 				55BBD6FE1B8057FB0022CFC6 /* CoreDataManager.m */,
 				55BBD7111B805A5A0022CFC6 /* Person.h */,
@@ -111,15 +124,17 @@
 			name = CoreDataManager;
 			sourceTree = "<group>";
 		};
-		55BBD7201B8078D50022CFC6 /* DirectAccess */ = {
+		55BBD7201B8078D50022CFC6 /* ShowData */ = {
 			isa = PBXGroup;
 			children = (
-				55BBD71A1B8078CF0022CFC6 /* DetailViewController.h */,
-				55BBD71B1B8078CF0022CFC6 /* DetailViewController.m */,
-				55BBD71C1B8078CF0022CFC6 /* DirectAccessViewController.h */,
-				55BBD71D1B8078CF0022CFC6 /* DirectAccessViewController.m */,
+				5578FEA41B820F3400E7BCD4 /* DetailViewController.h */,
+				5578FEA51B820F3400E7BCD4 /* DetailViewController.m */,
+				5578FEA61B820F3400E7BCD4 /* DirectAccessViewController.h */,
+				5578FEA71B820F3400E7BCD4 /* DirectAccessViewController.m */,
+				5578FEAA1B820F5C00E7BCD4 /* IndirectAccessTableViewController.h */,
+				5578FEAB1B820F5C00E7BCD4 /* IndirectAccessTableViewController.m */,
 			);
-			name = DirectAccess;
+			name = ShowData;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -193,13 +208,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				55BBD7131B805A5A0022CFC6 /* Person.m in Sources */,
+				5578FEA91B820F3400E7BCD4 /* DirectAccessViewController.m in Sources */,
 				55BBD6E31B8030BA0022CFC6 /* ViewController.m in Sources */,
+				5578FEA81B820F3400E7BCD4 /* DetailViewController.m in Sources */,
 				55BBD6FF1B8057FB0022CFC6 /* CoreDataManager.m in Sources */,
-				55BBD71F1B8078CF0022CFC6 /* DirectAccessViewController.m in Sources */,
 				55BBD7031B8058830022CFC6 /* CoreDataDemo.xcdatamodeld in Sources */,
+				5552FC781B8206DD00CAE085 /* Card.m in Sources */,
 				55BBD6E01B8030BA0022CFC6 /* AppDelegate.m in Sources */,
+				5578FEAC1B820F5C00E7BCD4 /* IndirectAccessTableViewController.m in Sources */,
+				5552FC771B8206DD00CAE085 /* PersonDetail.m in Sources */,
 				55BBD6DD1B8030BA0022CFC6 /* main.m in Sources */,
-				55BBD71E1B8078CF0022CFC6 /* DetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -346,6 +364,7 @@
 				55BBD6F41B8030BA0022CFC6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

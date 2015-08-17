@@ -1,39 +1,31 @@
 //
-//  DirectAccessViewController.m
+//  IndirectAccessTableViewController.m
 //  CoreDataDemo
 //
-//  Created by jiechen on 15/8/16.
+//  Created by jiechen on 15/8/17.
 //  Copyright © 2015年 jch. All rights reserved.
 //
 
-#import "DirectAccessViewController.h"
+#import "IndirectAccessTableViewController.h"
 #import "DetailViewController.h"
 #import "CoreDataManager.h"
-#import "Person.h"
+#import "Card.h"
 
 static NSString * const BasicCellIdentifier = @"BasicCell";
 
-@interface DirectAccessViewController () <UITableViewDataSource, UITableViewDelegate>
-
-@property (nonatomic, weak) IBOutlet UITableView *tableView;
+@interface IndirectAccessTableViewController ()
 
 @property (nonatomic, strong) NSArray *dataArray;
 
 @end
 
-@implementation DirectAccessViewController
-
-+ (instancetype)instance
-{
-    DirectAccessViewController *vc = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"DirectAccessViewControllerID"];
-    return vc;
-}
+@implementation IndirectAccessTableViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
-    self.title = @"Direct Access";
-    //MARK:tableView显示时顶部存在一个空白行，不知道是什么原因？
+    self.title = @"Indirect Access";
+    
+    [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:BasicCellIdentifier];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -41,8 +33,13 @@ static NSString * const BasicCellIdentifier = @"BasicCell";
     // Dispose of any resources that can be recreated.
 }
 
-#pragma mark - UITableViewDelegate, UITableViewDataSource>
-- (NSInteger)tableView:(nonnull UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+#pragma mark - Table view data source
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    return 1;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     return self.dataArray.count;
 }
@@ -55,9 +52,8 @@ static NSString * const BasicCellIdentifier = @"BasicCell";
 - (UITableViewCell *)tableView:(nonnull UITableView *)tableView cellForRowAtIndexPath:(nonnull NSIndexPath *)indexPath
 {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:BasicCellIdentifier forIndexPath:indexPath];
-    Person *person = self.dataArray[indexPath.row];
-    cell.textLabel.text = person.name;
-    cell.detailTextLabel.text = person.address;
+    Card *card = self.dataArray[indexPath.row];
+    cell.textLabel.text = card.certificateID;
     return cell;
 }
 
@@ -66,7 +62,7 @@ static NSString * const BasicCellIdentifier = @"BasicCell";
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     
     DetailViewController *vc = [DetailViewController instance];
-    vc.person = self.dataArray[indexPath.row];
+    vc.card = self.dataArray[indexPath.row];
     [self.navigationController pushViewController:vc animated:YES];
 }
 
@@ -77,7 +73,7 @@ static NSString * const BasicCellIdentifier = @"BasicCell";
         return _dataArray;
     }
     
-    _dataArray = [[CoreDataManager sharedManager] getAllPersons];
+    _dataArray = [[CoreDataManager sharedManager] getAllCards];
     return _dataArray;
 }
 

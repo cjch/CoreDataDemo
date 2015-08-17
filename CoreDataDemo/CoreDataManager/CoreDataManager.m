@@ -9,6 +9,8 @@
 #import "CoreDataManager.h"
 #import <CoreData/CoreData.h>
 #import "Person.h"
+#import "PersonDetail.h"
+#import "Card.h"
 
 static NSString * const AppExistTestDatakey = @"app.exist.test.data";
 
@@ -54,6 +56,15 @@ static NSString * const AppExistTestDatakey = @"app.exist.test.data";
         person.address = addresses[idx];
         person.age = ages[idx];
         
+        Card *card = [NSEntityDescription insertNewObjectForEntityForName:@"Card" inManagedObjectContext:self.managedObjectContext];
+        card.certificateID = obj;
+        PersonDetail *personDetail = [NSEntityDescription insertNewObjectForEntityForName:@"PersonDetail" inManagedObjectContext:self.managedObjectContext];
+        personDetail.name = names[idx];
+        personDetail.address = addresses[idx];
+        personDetail.age = ages[idx];
+        personDetail.card = card;
+        card.personDetail = personDetail;
+        
         NSError *error = nil;
         if (![self.managedObjectContext save:&error]) {
             [NSException raise:@"添加数据错误" format:@"%@", error.localizedDescription];
@@ -72,10 +83,26 @@ static NSString * const AppExistTestDatakey = @"app.exist.test.data";
     NSError *error = nil;
     NSArray *persons = [self.managedObjectContext executeFetchRequest:request error:&error];
     if (error) {
-        [NSException raise:@"添加数据错误" format:@"%@", error.localizedDescription];
+        [NSException raise:@"获取数据错误" format:@"%@", error.localizedDescription];
     }
     
     return persons;
+}
+
+- (NSArray *)getAllCards
+{
+    NSFetchRequest *request = [[NSFetchRequest alloc]init];
+    request.entity = [NSEntityDescription entityForName:@"Card" inManagedObjectContext:self.managedObjectContext];
+    NSSortDescriptor *sort = [[NSSortDescriptor alloc]initWithKey:@"certificateID" ascending:YES];
+    request.sortDescriptors = [NSArray arrayWithObject:sort];
+    
+    NSError *error = nil;
+    NSArray *cards = [self.managedObjectContext executeFetchRequest:request error:&error];
+    if (error) {
+        [NSException raise:@"获取数据错误" format:@"%@", error.localizedDescription];
+    }
+    
+    return cards;
 }
 
 #pragma mark - setter and getter

@@ -14,4 +14,6 @@
 
 - (NSArray *)getAllPersons;
 
+- (NSArray *)getAllCards;
+
 @end

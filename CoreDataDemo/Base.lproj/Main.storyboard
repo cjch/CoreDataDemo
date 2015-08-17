@@ -23,11 +23,20 @@
                                     <action selector="onDirectAccessButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3Qr-3o-Q92"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HX8-Iv-1eR">
+                                <rect key="frame" x="247" y="212" width="106" height="30"/>
+                                <state key="normal" title="Indirect Access"/>
+                                <connections>
+                                    <action selector="onIndirectAccessButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="w74-wz-aM9"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="YNx-3j-juE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="FOc-tP-jKA"/>
                             <constraint firstItem="YNx-3j-juE" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="100" id="No0-iR-erH"/>
+                            <constraint firstItem="HX8-Iv-1eR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="e6u-an-GFz"/>
+                            <constraint firstItem="HX8-Iv-1eR" firstAttribute="top" secondItem="YNx-3j-juE" secondAttribute="bottom" constant="18" id="vcY-Vv-4gv"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Itv-y8-Oov"/>
@@ -39,7 +48,6 @@
         <!--Direct Access View Controller-->
         <scene sceneID="EFY-Oi-K5n">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Z7M-b4-u1R" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController storyboardIdentifier="DirectAccessViewControllerID" id="1Y0-Q5-216" customClass="DirectAccessViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="4df-UK-Ely"/>
@@ -96,6 +104,7 @@
                         <outlet property="tableView" destination="nep-8d-xWx" id="h5R-y9-n2z"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Z7M-b4-u1R" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1934" y="843"/>
         </scene>
