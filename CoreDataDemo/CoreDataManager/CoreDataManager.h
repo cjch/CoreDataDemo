@@ -7,8 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
+@class NSManagedObjectContext;
 
 @interface CoreDataManager : NSObject
+
+@property (nonatomic, strong, readonly) NSManagedObjectContext *managedObjectContext;
 
 + (instancetype)sharedManager;
 

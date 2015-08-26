@@ -9,11 +9,13 @@
 #import "ViewController.h"
 #import "DirectAccessViewController.h"
 #import "IndirectAccessTableViewController.h"
+#import "FRCTableViewController.h"
 
 @interface ViewController ()
 
 - (IBAction)onDirectAccessButtonPressed:(UIButton *)sender;
 - (IBAction)onIndirectAccessButtonPressed:(UIButton *)sender;
+- (IBAction)onFRCButtonPressed:(UIButton *)sender;
 
 @end
 
@@ -37,6 +39,11 @@
 
 - (IBAction)onIndirectAccessButtonPressed:(UIButton *)sender {
     IndirectAccessTableViewController *vc = [IndirectAccessTableViewController new];
+    [self.navigationController pushViewController:vc animated:YES];
+}
+
+- (IBAction)onFRCButtonPressed:(UIButton *)sender {
+    FRCTableViewController *vc = [FRCTableViewController new];
     [self.navigationController pushViewController:vc animated:YES];
 }
 

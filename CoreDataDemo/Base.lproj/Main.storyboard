@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8164.2" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="HI9-v8-mna">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8164.2" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="HI9-v8-mna">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8135.1"/>
     </dependencies>
@@ -30,13 +30,22 @@
                                     <action selector="onIndirectAccessButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="w74-wz-aM9"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GHQ-AI-3nU" userLabel="fetchedResultsController">
+                                <rect key="frame" x="213" y="260" width="174" height="30"/>
+                                <state key="normal" title="FetchedResultsController"/>
+                                <connections>
+                                    <action selector="onFRCButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Lkm-FA-Vq9"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="YNx-3j-juE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="FOc-tP-jKA"/>
                             <constraint firstItem="YNx-3j-juE" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="100" id="No0-iR-erH"/>
+                            <constraint firstItem="GHQ-AI-3nU" firstAttribute="top" secondItem="HX8-Iv-1eR" secondAttribute="bottom" constant="18" id="WCM-lL-UDK"/>
                             <constraint firstItem="HX8-Iv-1eR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="e6u-an-GFz"/>
                             <constraint firstItem="HX8-Iv-1eR" firstAttribute="top" secondItem="YNx-3j-juE" secondAttribute="bottom" constant="18" id="vcY-Vv-4gv"/>
+                            <constraint firstItem="GHQ-AI-3nU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xNI-To-nTy"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Itv-y8-Oov"/>

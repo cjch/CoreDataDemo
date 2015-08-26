@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		5552FC771B8206DD00CAE085 /* PersonDetail.m in Sources */ = {isa = PBXBuildFile; fileRef = 5552FC731B8206DD00CAE085 /* PersonDetail.m */; };
 		5552FC781B8206DD00CAE085 /* Card.m in Sources */ = {isa = PBXBuildFile; fileRef = 5552FC761B8206DD00CAE085 /* Card.m */; };
+		55738FF81B8DF69C009C1475 /* FRCTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 55738FF71B8DF69C009C1475 /* FRCTableViewController.m */; };
 		5578FEA81B820F3400E7BCD4 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5578FEA51B820F3400E7BCD4 /* DetailViewController.m */; };
 		5578FEA91B820F3400E7BCD4 /* DirectAccessViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5578FEA71B820F3400E7BCD4 /* DirectAccessViewController.m */; };
 		5578FEAC1B820F5C00E7BCD4 /* IndirectAccessTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5578FEAB1B820F5C00E7BCD4 /* IndirectAccessTableViewController.m */; };
@@ -29,6 +30,8 @@
 		5552FC731B8206DD00CAE085 /* PersonDetail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PersonDetail.m; path = CoreDataManager/PersonDetail.m; sourceTree = "<group>"; };
 		5552FC751B8206DD00CAE085 /* Card.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Card.h; path = CoreDataManager/Card.h; sourceTree = "<group>"; };
 		5552FC761B8206DD00CAE085 /* Card.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Card.m; path = CoreDataManager/Card.m; sourceTree = "<group>"; };
+		55738FF61B8DF69C009C1475 /* FRCTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FRCTableViewController.h; path = ShowData/FRCTableViewController.h; sourceTree = "<group>"; };
+		55738FF71B8DF69C009C1475 /* FRCTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FRCTableViewController.m; path = ShowData/FRCTableViewController.m; sourceTree = "<group>"; };
 		5578FEA41B820F3400E7BCD4 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DetailViewController.h; path = ShowData/DetailViewController.h; sourceTree = "<group>"; };
 		5578FEA51B820F3400E7BCD4 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DetailViewController.m; path = ShowData/DetailViewController.m; sourceTree = "<group>"; };
 		5578FEA61B820F3400E7BCD4 /* DirectAccessViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DirectAccessViewController.h; path = ShowData/DirectAccessViewController.h; sourceTree = "<group>"; };
@@ -133,6 +136,8 @@
 				5578FEA71B820F3400E7BCD4 /* DirectAccessViewController.m */,
 				5578FEAA1B820F5C00E7BCD4 /* IndirectAccessTableViewController.h */,
 				5578FEAB1B820F5C00E7BCD4 /* IndirectAccessTableViewController.m */,
+				55738FF61B8DF69C009C1475 /* FRCTableViewController.h */,
+				55738FF71B8DF69C009C1475 /* FRCTableViewController.m */,
 			);
 			name = ShowData;
 			sourceTree = "<group>";
@@ -208,6 +213,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				55BBD7131B805A5A0022CFC6 /* Person.m in Sources */,
+				55738FF81B8DF69C009C1475 /* FRCTableViewController.m in Sources */,
 				5578FEA91B820F3400E7BCD4 /* DirectAccessViewController.m in Sources */,
 				55BBD6E31B8030BA0022CFC6 /* ViewController.m in Sources */,
 				5578FEA81B820F3400E7BCD4 /* DetailViewController.m in Sources */,
