@@ -1,5 +1,6 @@
 # CoreDataDemo
 
-CoreDataManager:使用单例管理和CoreData的交互。
-DirectAccess：不使用NSFetchedResultsController，利用Context， PersistentStoreCoordinator，Model存取数据。一次取出类的所有属性。
-IndirectAccess:同DirectAccess，不使用NSFetchedResultsController，若属性是一个entity，则其具体数据可以在需要的时候才从数据库中取出来。
+CoreDataManager:使用单例管理和CoreData的交互。  
+DirectAccess：不使用NSFetchedResultsController，利用Context， PersistentStoreCoordinator，Model存取数据。一次取出类的所有属性。  
+IndirectAccess:同DirectAccess，不使用NSFetchedResultsController，若属性是一个entity，则其具体数据可以在需要的时候才从数据库中取出来。  
+NSFetchedResultsController 使用NSFetchedResultsController取数据，当项目中需要使用CoreData时，推荐使用此种方法访问CoreData数据库。
